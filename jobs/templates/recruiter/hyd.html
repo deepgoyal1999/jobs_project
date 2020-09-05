@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' href='{% static "css/DESIGN.CSS"%}'>
+    <title></title>
+  </head>
+  <body>
+    <hr>
+     <h1>HYDERABAD JOBS</h1>
+    <hr>
+     <img src='{% static "images/abc.jpg" %}'>
+     <img src='{% static "images/abc1.jpg" %}'>
+    <hr>
+     {% if jobs_list %}
+     <table id='tab'>
+       <thead>
+         <th>Date</th>
+         #<th>Company</th>
+         <th>Title</th>
+
+         <th>Phonenumber</th>
+        </thead>
+      {% for jobs in jobs_list %}
+      <tr>
+        <td>{{jobs.date}}</td>
+        #<td>{{jobs.company}}</td>
+        <td>{{jobs.title}}</td>
+
+        <td>{{jobs.phonenum}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+      {% else %}
+    <p>No jobs here</p>
+     {% endif %}
+
+  </body>
+</html>

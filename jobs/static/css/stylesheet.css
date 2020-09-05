@@ -1,0 +1,33 @@
+-BODY{
+             BACKGROUND:URL(ABC.JPG)
+             NO-REPEAT  CENTER CENTER FIXED;
+             BACKGROUND-SIZE:COVER;}
+
+.CONTAINER{
+                  POSITION:ABSOLUTE;
+                  LEFT:40%;
+                 TOP:25%;
+                 PADDING:50PX;
+                 TEXT-ALIGN:CENTER;
+                 BACKGROUND:url(abc1.jpg);
+                  BACKGROUND-SIZE:COVER;
+                 OPACITY:0.8;
+                 WIDTH:15%; }
+
+.CONTAINER H2{
+                      FONT-FAMILY:CURSIVE;}
+
+INPUT{
+              BORDER:NONE;
+              BORDER-RADIUS:20PX;
+              COLOR:BLACK;
+              BACKGROUND-COLOR:WHITE;
+              TEXT-ALIGN:CENTER;
+              WIDTH:100%;
+              PADDING:10PX;}
+
+#BUTTON{
+               BORDER-RADIUS:3PX;
+               BACKGROUND-COLOR:BLUE;
+               OPACITY:1.0;
+               WIDTH:70%;}
